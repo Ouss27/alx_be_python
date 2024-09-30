@@ -1,24 +1,25 @@
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
+#Prompt the user to enter a temperature
 temperature = input("Enter the temperature to convert: ")
 
- # Check if the temperature is a valid number (int, float, or numeric string)
+# Check if the temperature is a valid number (int, float, or numeric string)
 if isinstance(temperature, (int, float)) or (isinstance(temperature, str) and temperature.replace('.', '', 1).isdigit()):
     temperature = float(temperature)  # Convert to float
     
 else:
-        # Raise a ValueError with the custom message
+    # Raise a ValueError with the custom message
     raise ValueError("Invalid temperature. Please enter a numeric value.")
 
-
-
-
+#Prompt the user the unit of temperature entred
 temperature_unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ")
 
+#function to convert temperature to celsius
 def convert_to_celsius(temperature):
     return (temperature - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
+#function to convert temperature to fahrenheit
 def convert_to_fahrenheit(temperature):
     return (temperature * CELSIUS_TO_FAHRENHEIT_FACTOR) + 32
 
