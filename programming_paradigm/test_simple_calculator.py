@@ -20,7 +20,7 @@ class Test(unittest.TestCase):
         self.assertEqual(self.calc.subtract(-5, -5), 0)
 
     #test multiplication method
-    def test_multiply(self):
+    def test_multiplication(self):
         self.assertEqual(self.calc.multiply(2, 3), 6)
         self.assertEqual(self.calc.multiply(0, 3), 0)
         self.assertEqual(self.calc.multiply(-1, -1), 1)
