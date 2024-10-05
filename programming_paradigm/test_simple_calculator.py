@@ -9,9 +9,9 @@ class Test(unittest.TestCase):
 
     #test addition method
     def test_addition(self):
-        self.assertAlmostEqual(self.calc.add(1,2),3)
-        self.assertAlmostEqual(self.calc.add(1,-3),-2)
-        self.assertAlmostEqual(self.calc.add(0,0),0)
+        self.assertEqual(self.calc.add(1,2),3)
+        self.assertEqual(self.calc.add(1,-3),-2)
+        self.assertEqual(self.calc.add(0,0),0)
 
     #test substraction method
     def test_subtraction(self):
