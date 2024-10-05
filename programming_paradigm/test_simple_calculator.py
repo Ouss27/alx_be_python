@@ -5,7 +5,7 @@ class Test(unittest.TestCase):
 
     #Set up a SimpleCalculator instance for use in all tests
     def set_up(self):
-        self.calc = SimpleCalculator
+        self.calc = SimpleCalculator()
 
     #test addition method
     def test_add(self):
